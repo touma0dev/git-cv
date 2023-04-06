@@ -17,9 +17,11 @@ $color-fg-default: #adbac7;
 
 .underline{
     text-decoration: underline;
-
+    font-size: 14pt;
 }
-
+.text{
+    font-family: 'Lato', sans-serif;
+}
 .resume{
     @include preset.flex-center;
     justify-content: center;
