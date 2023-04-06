@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+a, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.resume-titulo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.resume-titulo-box {
+  padding: 0px 5px;
+  display: inline-block;
+}
+
+.sobre {
+  color: #adbac7;
+}
+
+.habilidades-content {
+  max-width: 515px;
+}
+.habilidades-content-titulo {
+  background-color: #fff;
+  text-align: center;
+  font-size: 19pt;
+  border-bottom: 1px dashed #adbac7;
+}
+.habilidades-content-topic-frame {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.habilidades-content-topic-frame .quebra {
+  padding: 0 45px;
+}
+.habilidades-content-topic-frame li {
+  padding: 5px 25px;
+  display: flex;
+}
+
+.experiencia-content-titulo {
+  background-color: #fff;
+  text-align: center;
+  font-size: 19pt;
+  border-top: 1px dashed #adbac7;
+}
+.experiencia-content .right {
+  text-align: right;
+}
+.experiencia-content-profession {
+  word-wrap: break-word;
+  margin: 0 35px;
+  max-width: 430px;
+}
+.experiencia-content-profession p {
+  line-height: 30px;
+}
+.experiencia-content-profession p time {
+  color: #adbac7;
+}
+.experiencia-content-profession span {
+  line-height: 30px;
+}
+.experiencia-content-profession span li {
+  text-indent: 1em;
+}
+
+.projetos-content-titulo {
+  text-align: center;
+  font-size: 19pt;
+  border-top: 1px dashed #adbac7;
+}
+.projetos-content-work {
+  word-wrap: break-word;
+  margin: 0 35px;
+  max-width: 430px;
+}
+.projetos-content-work ul {
+  margin-top: 15px;
+  word-break: break-all;
+  line-height: 19px;
+}
+.projetos-content-work ul li {
+  line-height: 19px;
+}
+.projetos-content-work ul p {
+  text-indent: 0.5em;
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.red {
+  color: rgb(224, 33, 33);
+}
+
+.blue {
+  color: rgb(63, 63, 238);
+}
+
+.green {
+  color: rgb(81, 163, 81);
+}/*# sourceMappingURL=style.css.map */

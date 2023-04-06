@@ -1,0 +1,135 @@
+@use 'preset';
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+a,li{
+    text-decoration: none;
+    list-style-type:none ;
+}
+$red:rgb(224, 33, 33);
+$blue:rgb(63, 63, 238);
+$green:rgb(81, 163, 81); 
+$color-fg-default: #adbac7;
+
+.underline{
+    text-decoration: underline;
+
+}
+
+.resume{
+    @include preset.flex-center;
+    justify-content: center;
+    &-titulo{
+    @include preset.flex-center;
+    justify-content: space-around;
+&-box{
+    padding: 0px 5px;
+    display: inline-block;
+    
+}
+
+    }
+}
+.sobre{
+    color: $color-fg-default;
+}
+.habilidades{
+    &-content{
+        max-width: 515px;
+
+        &-titulo{
+            background-color: #fff;
+            text-align: center;
+            font-size: 19pt;
+            border-bottom: 1px  dashed $color-fg-default;
+        }
+        &-topic{
+            &-frame{
+                @include preset.flex-center;
+                justify-content: space-around;
+               .quebra{
+                padding: 0 45px;
+               }
+                li{
+                    padding: 5px 25px;
+                    display: flex;
+                }
+            }
+            
+        }
+    }
+}
+.experiencia{
+  &-content{
+    &-titulo{
+        background-color: #fff;
+        text-align: center;
+        font-size: 19pt;
+        border-top: 1px  dashed $color-fg-default;
+    }
+    .right{
+        text-align: right;
+    }
+    &-profession{
+        word-wrap: break-word;
+        margin: 0 35px;
+        max-width: 430px;
+        p{
+            line-height: 30px;
+            time{
+                color: $color-fg-default;
+            }
+           
+        }
+        span{
+            line-height: 30px;
+            li{
+         
+                text-indent: 1em;
+            }
+        }
+    }
+  }
+}
+
+.projetos{
+    &-content{
+        &-titulo{
+            text-align: center;
+            font-size: 19pt;
+            border-top: 1px  dashed $color-fg-default;
+        }
+        &-work{
+            word-wrap: break-word;
+            margin: 0 35px;
+            max-width: 430px;
+            ul{
+                margin-top: 15px;
+                word-break: break-all;
+                line-height: 19px;
+                li{
+                    line-height: 19px;
+                }
+                p{
+                    text-indent: 0.5em;
+                    line-height: 26px;
+                    font-size: 16px;
+                }
+            }
+          
+        }
+    }
+}
+.red{
+color: $red;
+}
+.blue{
+    color: $blue;
+}
+.green{
+    color: $green;
+}
